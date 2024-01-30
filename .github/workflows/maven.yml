@@ -30,10 +30,10 @@ jobs:
         cache: maven
 
     - name: Build with Maven
-      run: ./mvnw -B verify -Dmaven.test.skip=true
+      run: mvn -B verify -Dmaven.test.skip=true
 
     - name: Build Docker image
-      run: ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=copinuxlevrai/awesome-springboot -Dmaven.test.skip=true
+      run: mvn spring-boot:build-image -Dspring-boot.build-image.imageName=copinuxlevrai/awesome-springboot -Dmaven.test.skip=true
 
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
