@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseMigrationSettings" lastSelectedDirectory="db/changelog/changes" liquibaseFileType="YAML" mainChangeLogDir="db/changelog/changes" mainChangeLogName="${semVer.getMajor()}.${semVer.getMinor()}.${semVer.getPatch()}-changelog">
+    <database-infos>
+      <database-info>
+        <option name="enabled" value="true" />
+        <dbms-id>postgres</dbms-id>
+      </database-info>
+    </database-infos>
+    <pkConstraintName name="pkConstraintName">
+      <pk-constraint-name prefix="pk" />
+    </pkConstraintName>
+  </component>
+  <component name="JpaPluginProjectSettings" reExcludeTablePrefixes="" reExcludeColumnPrefixes="" reExcludeTableSuffixes="" reExcludeColumnSuffixes="" mappingCollectionMethodNamingStrategy="PLURALIZE" />
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit name="Default">
+        <packages>
+          <package value="ch.copiiinux.awesomespringboot" />
+        </packages>
+      </persistence-unit>
+    </persistence-units>
+  </component>
+</project>
